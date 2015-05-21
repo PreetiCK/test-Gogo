@@ -37,7 +37,7 @@ public class DWGettingStartedApplication
                                 configuration.getPassword()),
                         "SECURITY REALM",
                         User.class)));
-        environment.jersey().register(new HelloResource());
+        environment.jersey().register(new HelloResource()); //comment
         environment.jersey().register(new SecuredHelloResource());
     }
 
